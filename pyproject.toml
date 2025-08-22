@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "unisoc_unlock"
+name = "unisoc_unlock-remake"
 version = "0.0.2"
 authors = [
   { name="Patrick Huesmann", email="info@patrick-huesmann.de" },
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/patrislav1/unisoc-unlock"
+"Homepage" = https://github.com/KSNredawew/unisoc-unlock-remake"
 
 [project.scripts]
 unisoc_unlock = "unisoc_unlock.cli:main"
