@@ -34,12 +34,10 @@ class BootloaderUnlock:
         self.prepare()
         
         try:
-            # Прямая команда разблокировки
             self.dev._SimpleCommand(b'flashing unlock', timeout_ms=60*1000)
             print('Bootloader unlocked successfully!')
         except Exception as e:
             print(f'Error during unlock: {str(e)}')
-            # Альтернативный метод через OEM команду
             try:
                 self.dev.Oem('unlock', timeout_ms=60*1000)
                 print('Bootloader unlocked via OEM command!')
