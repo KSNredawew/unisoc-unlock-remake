@@ -11,10 +11,10 @@ There is also a custom fastboot binary in circulation [[2]](#references) which i
 I could only test this tool with a **Unisoc T606-615** (on a Anbernic RG405M). The leaked key `rsa4096_vbmeta.pem` may or may not work with other Unisoc chipsets. YMMV.
 
 If you receive a `FastbootRemoteFailure` and/or error messages such as `Unlock bootloader fail`, check the model of your Unisoc chipset and please don't open an issue
-if your chipset is not the above mentioned T618. Since I don't have any other Unisoc based device, I have no way of porting this tool to other chipsets. Presumably
+if your chipset is not the above mentioned T606-615. Since I don't have any other Unisoc based device, I have no way of porting this tool to other chipsets. Presumably
 they have a different bootloader key and there is no way to make this tool work until that key is leaked as well.
 
-TL;DR: *please don't create issues related to other Unisoc chipsets than the T618*
+TL;DR: *please don't create issues related to other Unisoc chipsets than the T606-615*
 
 If you manage to make this tool work on other chipsets, feel free to open a PR.
 
